@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envi5-Registation</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script>
+        function showhide1(a){
+            if(a==11){
+                document.getElementById('noofpar').style.display="block";
+                document.getElementById('noofpar2').style.display="none";
+                document.getElementById('fieldtwo').style.display="block";
+            } else if(a==15){
+                document.getElementById('noofpar2').style.display="block";
+                document.getElementById('noofpar').style.display="none";
+                document.getElementById('fieldtwo').style.display="none";
+            }
+        }
+        function showhide2(a){
+            if(a==13){
+                document.getElementById('noofpar').style.display="none";
+                document.getElementById('noofpar2').style.display="none";
+                document.getElementById('fieldtwo').style.display="none";
+                document.getElementById('fieldthree').style.display="none";
+                document.getElementById('fieldfour').style.display="none";
+            }
+        }
+        function showhide3(a){
+            if(a==2){
+                document.getElementById('fieldtwo').style.display="block";
+                document.getElementById('fieldthree').style.display="none";
+                document.getElementById('fieldfour').style.display="none";
+            }
+            else if(a==3){
+                document.getElementById('fieldtwo').style.display="block";
+                document.getElementById('fieldthree').style.display="block";
+                document.getElementById('fieldfour').style.display="none";
+            }
+            else if(a==4){
+                document.getElementById('fieldtwo').style.display="block";
+                document.getElementById('fieldthree').style.display="block";
+                document.getElementById('fieldfour').style.display="block";
+            }
+           
+        }
+        function showhide4(a){
+            if(a==21){
+                document.getElementById('fieldtwo').style.display="none";  
+            }
+            else if(a==22){
+                document.getElementById('fieldtwo').style.display="block";
+            }
+        }
+
+    </script>
+    
+
+
+
+
+</head>
+<body style="background-color: rgb(19, 19, 19);" >
+    <header>    
+        <nav class="navbar navbar-expand-lg " >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+               <img src="envi font.png" alt="" width="150" height="35">
+                </a>
+              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="form.html">Proshow</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#contacts" >Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+<section>
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #fca41c; font-size: 50px;" class="p-5">Registration</h1>
+    <form action="https://script.google.com/macros/s/AKfycbztMJoUlUayQXOEaUbh_yayVOCou3mxDCdTqeNygJ76TZd-woX46ODI0nYb1aQdaAM9kw/exec" method="post">
+       
+        <fieldset>
+            <legend class="textcol"> Select Event:</legend>
+     
+                <input type="radio" id="ptwo"  class="textcol form-check-input" onclick="showhide1(11)" name="hackathon">
+                <label style="color: white;" class="form-check-label">Hackathon</label> <br>
+                <input type="radio" id="ptwo"  class="textcol form-check-input" onclick="showhide2(13)" name="starofenvi">
+                <label style="color: white;" class="form-check-label">Star Of Envi</label> <br>
+                <input type="radio" id="ptwo"  class="textcol form-check-input" onclick="showhide2(13)" name="events">
+                <label style="color: white;" class="form-check-label">Davinci <Code></Code></label> <br>
+                <input type="radio" id="ptwo"  class="textcol form-check-input" onclick="showhide2(13)" name="events">
+                <label style="color: white;" class="form-check-label">UX Factor</label> <br>
+                <input type="radio" id="ptwo"  class="textcol form-check-input" onclick="showhide1(15)" name="events">
+                <label style="color: white;" class="form-check-label">Tech-Whiz</label> <br>
+                <input type="radio" id="ptwo"  class="textcol form-check-input" onclick="showhide2(13)" name="events">
+                <label style="color: white;" class="form-check-label">Tekkers</label>
+               
+            
+            <fieldset class="pt-4 show" id="noofpar">
+
+            <legend class="textcol"> No.Of Participants:</legend> 
+            <input type="radio" id="ptwo"  class="textcol" name="noof" onclick="showhide3(2)">TWO</label>
+            <input type="radio" id="pthree" class="textcol"  name="noof" onclick="showhide3(3)" >THREE </label>
+            <input type="radio" id="pfour" class="textcol"  name="noof" onclick="showhide3(4)">FOUR </label>
+           
+            </fieldset>
+
+            <fieldset class="pt-4 show" id="noofpar2">
+                <legend class="textcol"> No.Of Participants:</legend> 
+                 <input type="radio" id="ppone" class="textcol"  name="noof" onclick="showhide4(21)">ONE</label>
+                <input type="radio" id="pptwo"  class="textcol" name="noof" onclick="showhide4(22)">TWO</label>
+               
+            </fieldset>
+        <fieldset class="pt-4 ">
+          <legend class="textcol"><span class="number">1</span> Participant </legend>
+          
+          <label for="name" class="textcol">Name:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail" class="textcol">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="password" class="textcol">Mobile No:</label>
+          <input type="number" id="Number" name="user_number">
+
+          <label for="collegename" class="textcol">College Name:</label>
+          <input type="text" id="collegename" name="user_collegename">
+
+
+          <label for="place" class="textcol">Place:</label>
+          <input type="text" id="place" name="user_place">  
+          
+        
+        </fieldset>
+        <fieldset class="pt-4 show" id="fieldtwo">
+            <legend class="textcol"><span class="number">2</span> Participant </legend>
+            
+            <label for="name" class="textcol">Name:</label>
+            <input type="text" id="name" name="user_name2">
+        
+            
+            <label for="password" class="textcol">Mobile No:</label>
+            <input type="number" id="Number" name="user_number2">
+
+          </fieldset>
+          <fieldset class="pt-4 show" id="fieldthree">
+            <legend class="textcol"><span class="number">3</span> Participant </legend>
+            
+            <label for="name" class="textcol">Name:</label>
+            <input type="text" id="name" name="user_name3">
+        
+            
+            <label for="password" class="textcol">Mobile No:</label>
+            <input type="number" id="Number" name="user_number3">
+
+          </fieldset>
+          <fieldset class="pt-4 show" id="fieldfour">
+            <legend class="textcol"><span class="number">4</span> Participant </legend>
+            
+            <label for="name" class="textcol">Name:</label>
+            <input type="text" id="name" name="user_name4">
+        
+            
+            <label for="password" class="textcol">Mobile No:</label>
+            <input type="number" id="Number" name="user_number4">
+
+          </fieldset>
+          <fieldset>
+             <label for="formFileLg" class="form-label"></label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file" name="file">
+          </fieldset>
+      
+          <fieldset >
+            <button type="submit" >SUBMIT</button>
+          </fieldset>
+        
+        
+      </form>
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBReII0L0aJjFjK2bQKIKO8vPHCzWXVjdA",
+          authDomain: "envi5registration.firebaseapp.com",
+          projectId: "envi5registration",
+          storageBucket: "envi5registration.appspot.com",
+          messagingSenderId: "344618282361",
+          appId: "1:344618282361:web:98f67c94f740429dbe93a8",
+          measurementId: "G-Z0JN3X73ES"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        import{
+            getFirestore,doc,getdoc ,setDoc,collection,addDoc
+        }
+        from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+        const db=getFirestore();
+        let RollBox=document.getElementById("")
+      </script>
+      
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
